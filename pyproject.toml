@@ -1,0 +1,39 @@
+[project]
+name = "hostrange"
+version = "0.1.0"
+description = "Expand host range patterns like n[1-10] or c[01-05] into lists of hostnames"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Toru Nakai", email = "nakai@scalewx.com" }
+]
+keywords = ["hostrange", "hostname", "cluster", "expand", "hpc"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/nakai/hostrange"
+Repository = "https://github.com/nakai/hostrange"
+
+[build-system]
+requires = ["uv_build>=0.9.8,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
